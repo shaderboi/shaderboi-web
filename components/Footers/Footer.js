@@ -84,12 +84,14 @@ export default function Footer() {
                       </a>
                     </li>
                     <li>
-                      <a
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="#"
-                      >
-                        Privacy Policy
-                      </a>
+                      <Link href="/privacy-policy">
+                        <a
+                          className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                          href="/privacy-policy"
+                        >
+                          Privacy Policy
+                        </a>
+                      </Link>
                     </li>
                     <li>
                       <a
