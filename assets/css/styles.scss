@@ -1,0 +1,157 @@
+// Colors
+$primary: #5656a8;
+$secondary: #e4e4e7;
+$background-primary: #5656a8;
+$on-background-primary: #ffffff;
+
+// Size
+$size-font-regular: 25px;
+$size-font-large: 30px;
+$size-font-larger: 35px;
+
+// Clear styling
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+// Set fonts
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Roboto', sans-serif;
+}
+
+// Styles
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-sub-container {
+    flex: 1;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.header-image {
+    max-width: 50%;
+}
+
+.headline-container {
+    display: flex;
+    margin-left: 40px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.headline-title {
+
+}
+
+.fill-color-primary {
+    background-color: $primary;
+    fill: $secondary;
+}
+
+.container-middle-primary {
+    padding: 80px 0 70px 0;
+    background-color: $primary;
+}
+
+.bottom-bar {
+    background-color: $secondary;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.svg-transition {
+}
+
+.bottom-menus-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 0;
+    margin: 0 40px;
+}
+
+.bottom-menu-container {
+}
+
+.on-background-primary {
+    background-color: $on-background-primary;
+}
+
+.text-on-primary {
+    color: $on-background-primary;
+}
+
+.size-icon-regular {
+    font-size: $size-font-regular;
+}
+
+.size-text-regular {
+    font-size: $size-font-regular;
+}
+
+.size-text-large {
+    font-size: $size-font-large;
+}
+
+.size-text-larger {
+    font-size: $size-font-larger;
+}
+
+.container-base {
+    display: flex;
+}
+
+.container-content-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.section-social-media {
+    display: flex;
+    flex-direction: row;
+    //justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.icon-circle {
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caption-social-media {
+    margin-left: 20px;
+}
