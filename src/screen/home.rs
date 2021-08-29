@@ -31,7 +31,7 @@ impl Component for HomeScreen {
                             <h3 class="size-text-regular">{"We realize your idea at a relatively low cost."}</h3>
                         </div>
                     </div>
-                    <img class="header-sub-container header-image" src="https://shaderboi.id/img/pattern_nextjs.png" alt="Shaderboi Pattern" />
+                    <img class="header-sub-container header-image" src="/assets/img/pattern.png" alt="Shaderboi Pattern" />
                 </div>
                 <div class="container-middle-primary container-base container-content-center">
                     <div>
