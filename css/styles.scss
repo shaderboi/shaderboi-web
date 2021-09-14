@@ -6,10 +6,12 @@ $on-background-primary: #ffffff;
 $on-background-secondary: #000;
 
 // Size
-$size-font-s: 20px;
-$size-font-m: 25px;
-$size-font-l: 30px;
-$size-font-xl: 35px;
+$size-font-1: 15rem;
+$size-font-2: 24rem;
+$size-font-3: 30rem;
+$size-font-4: 36rem;
+$size-font-5: 42rem;
+$size-font-6: 50rem;
 
 // Clear styling
 * {
@@ -98,24 +100,28 @@ h1, h2, h3, h4, h5, h6, p, a {
     color: $on-background-primary;
 }
 
-.size-icon-m {
-    font-size: $size-font-m;
+.size-text-1 {
+    font-size: $size-font-1;
 }
 
-.size-text-s {
-    font-size: $size-font-s;
+.size-text-2 {
+    font-size: $size-font-2;
 }
 
-.size-text-m {
-    font-size: $size-font-m;
+.size-text-3 {
+    font-size: $size-font-3;
 }
 
-.size-text-l {
-    font-size: $size-font-l;
+.size-text-4 {
+    font-size: $size-font-4;
 }
 
-.size-text-xl {
-    font-size: $size-font-xl;
+.size-text-5 {
+    font-size: $size-font-5;
+}
+
+.size-text-6 {
+    font-size: $size-font-6;
 }
 
 .container-base {
