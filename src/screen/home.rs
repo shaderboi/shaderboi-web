@@ -23,19 +23,19 @@ impl Component for HomeScreen {
 
     fn view(&self) -> Html {
         html! {
-            <div>
+            <>
                 <div class="header-container">
-                    <div class="header-sub-container">
+                    <div class="header-sub-container-left">
                         <div class="headline-container">
                             <h2 class="size-text-large">{"A place where you can find a solution for your problem and make your idea to be real."}</h2>
                             <h3 class="size-text-regular">{"We realize your idea at a relatively low cost."}</h3>
                         </div>
                     </div>
-                    <img class="header-sub-container header-image" src="/assets/img/pattern.png" alt="Shaderboi Pattern" />
+                    <img class="header-sub-container-right header-image" src="/assets/img/pattern.png" alt="Shaderboi Pattern" />
                 </div>
-                <div class="container-middle-primary container-base container-content-center">
-                    <div>
-                        <h2 class="text-center size-text-large text-on-primary mb-2">{"Keep in touch with us!"}</h2>
+                <div class="container-middle-primary container-base">
+                    <div class="container-content-center">
+                        <h2 class="text-center size-text-large text-on-background-primary mb-2">{"Keep in touch with us!"}</h2>
                         <SocialSection icon_name="fab fa-whatsapp" url="https://wa.me/6281296390327" color={Some(format!("#25D366"))} caption="+62 812-9639-0327 (Michael)" />
                         <SocialSection icon_name="fab fa-line" url="https://line.me/ti/p/~mike0883" color={Some(format!("#06C755"))} caption="mike0883 (Michael)" />
                         <SocialSection icon_name="fab fa-instagram" url="https://instagram.com/shaderboi" caption="@shaderboi" />
@@ -43,7 +43,7 @@ impl Component for HomeScreen {
                         <SocialSection icon_name="fab fa-linkedin" url="https://www.linkedin.com/company/shaderboi/" color={Some(format!("#0077B5"))} caption="Shaderboi" />
                     </div>
                 </div>
-            </div>
+            </>
         }
     }
 }

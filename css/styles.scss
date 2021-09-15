@@ -1,7 +1,7 @@
 // Colors
-$primary: #5656a8;
+$primary: #272750;
 $secondary: #e4e4e7;
-$background-primary: #5656a8;
+$background-primary: #272750;
 $on-background-primary: #ffffff;
 $on-background-secondary: #000;
 
@@ -17,6 +17,12 @@ $size-font-6: 50rem;
 * {
     margin: 0;
     padding: 0;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -35,16 +41,59 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 // Styles
 
-.header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+// Text
+
+.text-center {
+    text-align: center;
 }
 
-.header-sub-container {
+.text-vspacing {
+    margin: 1rem 0 0.5rem 0;
+}
+
+// End text
+.header-container {
+    display: flex;
+    @media (max-width: 550px) {
+        flex-direction: column-reverse;
+    }
+    @media (min-width: 550px) {
+        flex-direction: row;
+    }
+    justify-content: space-between;
+}
+//@media (max-width: 550px) {
+//   .header-container {
+//       display: flex;
+//       flex-direction: column-reverse;
+//       justify-content: space-between;
+//   }
+//}
+//
+//@media (min-width: 550px) {
+//    .header-container {
+//        display: flex;
+//        flex-direction: row;
+//        justify-content: space-between;
+//    }
+//}
+
+.header-sub-container-left {
     flex: 1;
     flex-wrap: wrap;
     display: flex;
+    @media (max-width: 550px) {
+        align-self: flex-start;
+    }
+}
+
+.header-sub-container-right {
+    flex: 1;
+    flex-wrap: wrap;
+    display: flex;
+    @media (max-width: 550px) {
+        align-self: flex-end;
+    }
 }
 
 .header-image {
@@ -54,6 +103,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 .headline-container {
     display: flex;
     margin-left: 40px;
+    padding: 4rem 0;
     justify-content: center;
     flex-direction: column;
 }
@@ -76,6 +126,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     background-color: $secondary;
     margin-top: 0;
     margin-bottom: 0;
+    flex: 1;
 }
 
 .svg-transition {
@@ -96,7 +147,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     background-color: $on-background-primary;
 }
 
-.text-on-primary {
+.text-on-background-primary {
     color: $on-background-primary;
 }
 
@@ -124,19 +175,42 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-size: $size-font-6;
 }
 
+// Container
+
 .container-base {
     display: flex;
     flex-direction: column;
 }
 
 .container-content-center {
-    align-items: center;
-    justify-content: center;
+    align-self: center;
 }
 
-.text-center {
-    text-align: center;
+
+.container-clamp-width {
+    padding: 0 1.5rem;
+    @media (min-width: 400px) {
+        width: 400px;
+    }
+
+    @media (min-width: 550px) {
+        width: 550px;
+    }
+
+    @media (min-width: 750px) {
+        width: 750px;
+    }
+
+    @media (min-width: 1000px) {
+        width: 1000px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 1200px;
+    }
 }
+
+// End Container
 
 .mb-1 {
     margin-bottom: 1rem;

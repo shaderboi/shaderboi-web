@@ -11,6 +11,7 @@ use yew_router::prelude::*;
 use crate::screen::data_privacy::data_privacy::DataPrivacyScreen;
 use crate::screen::data_privacy::privacy_policy::PrivacyPolicyScreen;
 use crate::screen::home::HomeScreen;
+use crate::screen::data_privacy::data_removal::DataRemovalScreen;
 
 #[derive(Clone, Switch)]
 pub(crate) enum RootRoute {
@@ -30,6 +31,8 @@ pub(crate) enum HomeRoute {
 pub(crate) enum DataPrivacyRoute {
     #[to = "/data-privacy/privacy-policy"]
     PrivacyPolicy,
+    #[to = "/data-privacy/data-removal"]
+    DataRemoval,
     #[to = "/data-privacy"]
     Home,
 }
@@ -62,6 +65,7 @@ impl Component for DataPrivacyNavigator {
                         match switch {
                             DataPrivacyRoute::Home => html!{<DataPrivacyScreen />},
                             DataPrivacyRoute::PrivacyPolicy => html!{<PrivacyPolicyScreen />},
+                            DataPrivacyRoute::DataRemoval => html!{<DataRemovalScreen />},
                         }
                     })
                 />
@@ -128,7 +132,7 @@ impl Component for Root {
 
     fn view(&self) -> Html {
         html! {
-            <div>
+            <>
                 <div>
                     <Router<RootRoute, ()>
                         render = Router::render(|switch: RootRoute| {
@@ -139,7 +143,7 @@ impl Component for Root {
                     />
                 </div>
                 <div class="bottom-bar">
-                    <svg class="fill-color-primary" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <svg class="fill-color-primary" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0" style="height: 100px; width: 100%;">
                         <polygon class="text-blueGray-200 fill-current" points="2560 0 2560 100 0 100">
                         </polygon>
                     </svg>
@@ -158,7 +162,7 @@ impl Component for Root {
                         </div>
                     </div>
                 </div>
-            </div>
+            </>
         }
     }
 }

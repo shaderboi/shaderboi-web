@@ -56,8 +56,8 @@ impl<SW: Switch + Clone, STATE: RouterState> Component for InfoAndButtonSection<
         html! {
             <div class="section-info-and-button-container mb-1">
                 <div class="section-info-and-button-texts">
-                    <p class="size-text-m caption-social-media text-on-primary">{self.props.title.clone()}</p>
-                    <p class="size-text-s caption-social-media text-on-primary">{self.props.description.clone()}</p>
+                    <p class="size-text-m caption-social-media text-on-background-primary">{self.props.title.clone()}</p>
+                    <p class="size-text-s caption-social-media text-on-background-primary">{self.props.description.clone()}</p>
                 </div>
                 {
                     match &self.props.action {

@@ -41,7 +41,7 @@ impl Component for SocialSection {
         html! {
             <a href={self.url.clone()} class="section-social-media mb-1">
                 <CircleIcon icon_name={self.icon_name.clone()} color={self.color.clone()} />
-                <p class="size-text-regular caption-social-media text-on-primary">{self.caption.clone()}</p>
+                <p class="size-text-regular caption-social-media text-on-background-primary">{self.caption.clone()}</p>
             </a>
         }
     }

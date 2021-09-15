@@ -29,9 +29,9 @@ impl Component for DataPrivacyScreen {
             <div>
                 <div class="container-middle-primary container-base container-content-center">
                     <div>
-                        <h2 class="text-center size-text-l text-on-primary mb-2">{"Data & Privacy"}</h2>
+                        <h2 class="text-center size-text-l text-on-background-primary mb-2">{"Data & Privacy"}</h2>
                         <InfoAndButtonSection<DataPrivacyRoute> button_text="View" action={AnchorAction::Route(DataPrivacyRoute::PrivacyPolicy)} title="Privacy Policy" description="Read more about how Shaderboi collects and processes your personal data." />
-                        <InfoAndButtonSection<DataPrivacyRoute> button_text="Request" action={AnchorAction::Href(format!(""))} title="Remove My Data" description="Shaderboi will remove all your personal data." />
+                        <InfoAndButtonSection<DataPrivacyRoute> button_text="Request" action={AnchorAction::Route(DataPrivacyRoute::DataRemoval)} title="Remove My Data" description="Shaderboi will remove all your personal data." />
                     </div>
                 </div>
             </div>
