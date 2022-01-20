@@ -17,7 +17,7 @@ export default function Index() {
                 A place where you can find a solution for your problem.
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                We are an Indonesian based software company.
+                We can realize your idea at a low cost.
               </p>
               <div className="mt-12">
                 <a
@@ -600,17 +600,17 @@ export default function Index() {
                       </div>
                       <p className="inline-block ml-3 text-blueGray-300 text-1xl">Whatsapp</p>
                     </div>
-                    <p className="block text-2xl text-blueGray-300">+62 812-9639-0327</p>
+                    <p className="block text-2xl text-blueGray-300">+62 812-9639-0327 (Michael)</p>
                   </div>
                   <div>
                     <div className="block">
                       <div
-                        className="inline-block text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-6 shadow-lg rounded-full bg-white">
+                        className="inline-block text-blueGray-500 p-3 text-center items-center justify-center w-10 h-10 mb-6 shadow-lg rounded-full bg-white">
                         <i className="fab fa-line text-xl"></i>
                       </div>
                       <p className="inline-block ml-3 text-blueGray-300 text-1xl">LINE</p>
                     </div>
-                    <p className="block text-2xl text-blueGray-300">mike0883</p>
+                    <p className="block text-2xl text-blueGray-300">mike0883 (Michael)</p>
                   </div>
                   <div>
                     <div className="block">
