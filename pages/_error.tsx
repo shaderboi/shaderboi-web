@@ -1,12 +1,17 @@
 import React, { useEffect } from "react";
 import Router from "next/router";
 
-const Error = () => {
-  useEffect(() => {
-    Router.push("/");
-  });
+const Error = ({ statusCode }: any) => {
+  return (
+    <div>
+      <p>{`Error ${statusCode}`}</p>
+    </div>
+  );
+};
 
-  return <div />;
+Error.getInitialProps = ({ res, err }: any) => {
+  const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
+  return { statusCode };
 };
 
 export default Error;
