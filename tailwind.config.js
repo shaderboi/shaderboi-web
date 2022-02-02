@@ -2,9 +2,17 @@ const plugin = require("tailwindcss/plugin");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
+  reactStrictMode: true,
   purge: {
     enabled: true,
-    content: ["./**/*.html", "./*.html", "./**/*.js", "./*.js"],
+    content: [
+      "./**/*.html",
+      "./*.html",
+      "./**/*.ts",
+      "./*.tsx",
+      "./**/*.js",
+      "./*.jsx",
+    ],
     options: {
       safelist: [],
     },
@@ -16,6 +24,9 @@ module.exports = {
     extend: {
       minHeight: {
         "screen-75": "75vh",
+      },
+      fontFamily: {
+        Inter: ["Inter", "sans-serif"],
       },
       fontSize: {
         55: "55rem",
