@@ -1,4 +1,5 @@
 import React from "react";
+// @ts-ignore
 import ShadertoyReact from "shadertoy-react";
 
 const fs = `

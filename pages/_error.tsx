@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
 import Router from "next/router";
 
-export default () => {
+const Error = () => {
   useEffect(() => {
     Router.push("/");
   });
 
   return <div />;
-}
+};
+
+export default Error;

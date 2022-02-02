@@ -9,13 +9,13 @@ import { Jumbotron } from "../../components/Headers/Jumbotron";
 export default function Index() {
   return (
     <>
-      <IndexNavbar fixed/>
+      <IndexNavbar />
       <Jumbotron />
 
       <section className="mt-48 md:mt-40 pb-40 relative bg-blueGray-100">
         <div
           className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
-          style={{transform: "translateZ(0)"}}
+          style={{ transform: "translateZ(0)" }}
         >
           <svg
             className="absolute bottom-0 overflow-hidden"
@@ -35,8 +35,7 @@ export default function Index() {
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center">
             <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32">
-              <div
-                className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
+              <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
                 <img
                   alt="..."
                   src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
@@ -72,13 +71,10 @@ export default function Index() {
                 <div className="w-full md:w-6/12 px-4">
                   <div className="relative flex flex-col mt-4">
                     <div className="px-4 py-5 flex-auto">
-                      <div
-                        className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                      <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
                         <i className="fas fa-sitemap"></i>
                       </div>
-                      <h6 className="text-xl mb-1 font-semibold">
-                        Design
-                      </h6>
+                      <h6 className="text-xl mb-1 font-semibold">Design</h6>
                       <p className="mb-4 text-blueGray-500">
                         Notus NextJS comes with a huge number of Fully Coded CSS
                         components.
@@ -87,8 +83,7 @@ export default function Index() {
                   </div>
                   <div className="relative flex flex-col min-w-0">
                     <div className="px-4 py-5 flex-auto">
-                      <div
-                        className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                      <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
                         <i className="fas fa-drafting-compass"></i>
                       </div>
                       <h6 className="text-xl mb-1 font-semibold">
@@ -102,30 +97,28 @@ export default function Index() {
                   </div>
                 </div>
                 <div className="w-full md:w-6/12 px-4">
-                  <h5 className="text-3xl mb-1 font-semibold">What we provides</h5>
+                  <h5 className="text-3xl mb-1 font-semibold">
+                    What we provides
+                  </h5>
                   <div className="w-full">
                     <div className="relative flex flex-col min-w-0 mt-4">
                       <div className="px-4 py-5 flex-auto">
-                        <div
-                          className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                        <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
                           <i className="fas fa-newspaper"></i>
                         </div>
                         <h6 className="text-xl mb-1 font-semibold">Website</h6>
                         <p className="mb-4 text-blueGray-500">
-                          This extension also comes with 3 sample pages. They are
-                          fully coded so you can start working instantly.
+                          This extension also comes with 3 sample pages. They
+                          are fully coded so you can start working instantly.
                         </p>
                       </div>
                     </div>
                     <div className="relative flex flex-col min-w-0">
                       <div className="px-4 py-5 flex-auto">
-                        <div
-                          className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                        <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
                           <i className="fas fa-file-alt"></i>
                         </div>
-                        <h6 className="text-xl mb-1 font-semibold">
-                          Game
-                        </h6>
+                        <h6 className="text-xl mb-1 font-semibold">Game</h6>
                         <p className="mb-4 text-blueGray-500">
                           Built by developers for developers. You will love how
                           easy is to to work with Notus NextJS.
@@ -335,8 +328,7 @@ export default function Index() {
             </div>
 
             <div className="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
-              <div
-                className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
+              <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
                 <i className="fas fa-drafting-compass text-xl"></i>
               </div>
               <h3 className="text-3xl mb-2 font-semibold leading-normal">
@@ -401,25 +393,23 @@ export default function Index() {
           <div className="items-center flex flex-wrap">
             <div className="w-full md:w-5/12 ml-auto px-12 md:px-4">
               <div className="md:pr-12">
-                <div
-                  className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
+                <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
                   <i className="fas fa-file-alt text-xl"></i>
                 </div>
                 <h3 className="text-3xl font-semibold">
                   Complex Documentation
                 </h3>
                 <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                  This extension comes a lot of fully coded examples that help
+                  {`This extension comes a lot of fully coded examples that help
                   you get started faster. You can adjust the colors and also the
                   programming language. You can change the text and images and
-                  you're good to go.
+                  you're good to go.`}
                 </p>
                 <ul className="list-none mt-6">
                   <li className="py-2">
                     <div className="flex items-center">
                       <div>
-                        <span
-                          className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3">
+                        <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3">
                           <i className="fas fa-fingerprint"></i>
                         </span>
                       </div>
@@ -433,8 +423,7 @@ export default function Index() {
                   <li className="py-2">
                     <div className="flex items-center">
                       <div>
-                        <span
-                          className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3">
+                        <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3">
                           <i className="fab fa-html5"></i>
                         </span>
                       </div>
@@ -448,8 +437,7 @@ export default function Index() {
                   <li className="py-2">
                     <div className="flex items-center">
                       <div>
-                        <span
-                          className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3">
+                        <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3">
                           <i className="far fa-paper-plane"></i>
                         </span>
                       </div>
@@ -498,8 +486,7 @@ export default function Index() {
                     GPUspec Mobile
                   </h5>
                   <Link href="/auth/login">
-                    <div
-                      className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
+                    <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
                       <img
                         alt="..."
                         className="align-middle border-none max-w-full h-auto rounded-lg"
@@ -514,8 +501,7 @@ export default function Index() {
                     Tokko
                   </h5>
                   <Link href="/profile">
-                    <div
-                      className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
+                    <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
                       <img
                         alt="..."
                         className="align-middle border-none max-w-full h-auto rounded-lg"
@@ -530,8 +516,7 @@ export default function Index() {
                     Color Joy
                   </h5>
                   <Link href="/landing">
-                    <div
-                      className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
+                    <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
                       <img
                         alt="..."
                         className="align-middle border-none max-w-full h-auto rounded-lg"
@@ -561,53 +546,68 @@ export default function Index() {
                 <div className="flex-1">
                   <div>
                     <div className="block">
-                      <div
-                        className="inline-block text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-6 shadow-lg rounded-full bg-white">
+                      <div className="inline-block text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-6 shadow-lg rounded-full bg-white">
                         <i className="fab fa-whatsapp text-xl"></i>
                       </div>
-                      <p className="inline-block ml-3 text-blueGray-300 text-1xl">Whatsapp</p>
+                      <p className="inline-block ml-3 text-blueGray-300 text-1xl">
+                        Whatsapp
+                      </p>
                     </div>
-                    <p className="block text-2xl text-blueGray-300">+62 812-9639-0327 (Michael)</p>
+                    <p className="block text-2xl text-blueGray-300">
+                      +62 812-9639-0327 (Michael)
+                    </p>
                   </div>
                   <div>
                     <div className="block">
-                      <div
-                        className="inline-block text-blueGray-500 p-3 text-center items-center justify-center w-10 h-10 mb-6 shadow-lg rounded-full bg-white">
+                      <div className="inline-block text-blueGray-500 p-3 text-center items-center justify-center w-10 h-10 mb-6 shadow-lg rounded-full bg-white">
                         <i className="fab fa-line text-xl"></i>
                       </div>
-                      <p className="inline-block ml-3 text-blueGray-300 text-1xl">LINE</p>
+                      <p className="inline-block ml-3 text-blueGray-300 text-1xl">
+                        LINE
+                      </p>
                     </div>
-                    <p className="block text-2xl text-blueGray-300">mike0883 (Michael)</p>
+                    <p className="block text-2xl text-blueGray-300">
+                      mike0883 (Michael)
+                    </p>
                   </div>
                   <div>
                     <div className="block">
-                      <div
-                        className="inline-block text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-6 shadow-lg rounded-full bg-white">
+                      <div className="inline-block text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-6 shadow-lg rounded-full bg-white">
                         <i className="fab fa-linkedin text-xl"></i>
                       </div>
-                      <p className="inline-block ml-3 text-blueGray-300 text-1xl">LinkedIn</p>
+                      <p className="inline-block ml-3 text-blueGray-300 text-1xl">
+                        LinkedIn
+                      </p>
                     </div>
-                    <p className="block text-2xl text-blueGray-300">Shaderboi</p>
+                    <p className="block text-2xl text-blueGray-300">
+                      Shaderboi
+                    </p>
                   </div>
                   <div>
                     <div className="block">
-                      <div
-                        className="inline-block text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-6 shadow-lg rounded-full bg-white">
+                      <div className="inline-block text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-6 shadow-lg rounded-full bg-white">
                         <i className="fab fa-instagram text-xl"></i>
                       </div>
-                      <p className="inline-block ml-3 text-blueGray-300 text-1xl">Instagram</p>
+                      <p className="inline-block ml-3 text-blueGray-300 text-1xl">
+                        Instagram
+                      </p>
                     </div>
-                    <p className="block text-2xl text-blueGray-300">@shaderboi</p>
+                    <p className="block text-2xl text-blueGray-300">
+                      @shaderboi
+                    </p>
                   </div>
                   <div>
                     <div className="block">
-                      <div
-                        className="inline-block text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-6 shadow-lg rounded-full bg-white">
+                      <div className="inline-block text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-6 shadow-lg rounded-full bg-white">
                         <i className="fab fa-twitter text-xl"></i>
                       </div>
-                      <p className="inline-block ml-3 text-blueGray-300 text-1xl">Twitter</p>
+                      <p className="inline-block ml-3 text-blueGray-300 text-1xl">
+                        Twitter
+                      </p>
                     </div>
-                    <p className="block text-2xl text-blueGray-300">@ShaderboiTech</p>
+                    <p className="block text-2xl text-blueGray-300">
+                      @ShaderboiTech
+                    </p>
                   </div>
                 </div>
               </div>
@@ -624,7 +624,7 @@ export default function Index() {
       <section className="pb-16 bg-blueGray-200 relative pt-32">
         <div
           className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
-          style={{transform: "translateZ(0)"}}
+          style={{ transform: "translateZ(0)" }}
         >
           <svg
             className="absolute bottom-0 overflow-hidden"
@@ -642,7 +642,7 @@ export default function Index() {
           </svg>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 }

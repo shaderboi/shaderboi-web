@@ -19,15 +19,18 @@ Router.events.on("routeChangeStart", (url) => {
   );
 });
 Router.events.on("routeChangeComplete", () => {
+  // @ts-ignore
   ReactDOM.unmountComponentAtNode(document.getElementById("page-transition"));
   document.body.classList.remove("body-page-transition");
 });
 Router.events.on("routeChangeError", () => {
+  // @ts-ignore
   ReactDOM.unmountComponentAtNode(document.getElementById("page-transition"));
   document.body.classList.remove("body-page-transition");
 });
 
 export default class MyApp extends App {
+  // @ts-ignore
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {};
 
@@ -40,6 +43,7 @@ export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
 
+    // @ts-ignore
     const Layout = Component.layout || (({ children }) => <>{children}</>);
 
     return (
@@ -49,7 +53,9 @@ export default class MyApp extends App {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <title>Shaderboi | A place where you can find a solution for your problem.</title>
+          <title>
+            Shaderboi | A place where you can find a solution for your problem.
+          </title>
         </Head>
         <Layout>
           <Component {...pageProps} />

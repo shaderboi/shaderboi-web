@@ -27,7 +27,9 @@ export default function Footer() {
         <div className="container mx-auto px-4" id="footer-content">
           <div className="flex flex-wrap text-center lg:text-left">
             <div className="w-full lg:w-4/12 px-4">
-              <h4 className="text-3xl font-semibold">Let's keep in touch!</h4>
+              <h4 className="text-3xl font-semibold">
+                {"Let's keep in touch!"}
+              </h4>
               <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
                 Find us on any of these platforms, we respond 1-2 business days.
               </h5>
@@ -154,10 +156,7 @@ export default function Footer() {
                     </li>
                     <li>
                       <Link href="/privacy-policy">
-                        <a
-                          className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                          href="/privacy-policy"
-                        >
+                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">
                           Privacy Policy
                         </a>
                       </Link>

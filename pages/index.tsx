@@ -9,7 +9,7 @@ import { Jumbotron } from "../components/Headers/Jumbotron";
 export default function Index() {
   return (
     <>
-      <IndexNavbar fixed />
+      <IndexNavbar />
       <div style={{ marginTop: 76 }} />
       <Jumbotron />
 
