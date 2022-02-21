@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 // @ts-ignore
 import { Link as ScrollLink } from "react-scroll";
+import { FaAddressCard, FaBars } from "react-icons/fa";
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -11,22 +12,22 @@ export default function Navbar() {
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link href="/">
-              <>
+              <a>
                 <img
                   className="h-12 inline-block object-scale-down"
                   src="/img/logo.png"
                 ></img>
-                <p className="ml-3 inline-block text-blueGray-700 text-l font-bold leading-relaxed mr-4 py-2 whitespace-nowrap">
+                <h2 className="ml-3 inline-block text-blueGray-700 text-l font-bold leading-relaxed mr-4 py-2 whitespace-nowrap">
                   Shaderboi
-                </p>
-              </>
+                </h2>
+              </a>
             </Link>
             <button
               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
-              <i className="fas fa-bars"></i>
+              <FaBars />
             </button>
           </div>
           <div
@@ -84,9 +85,9 @@ export default function Navbar() {
               {/*  </a>*/}
               {/*</li>*/}
 
-              <li className="flex items-center">
+              <li className="flex items-center mt-4 lg:mt-0">
                 <ScrollLink
-                  className="bg-blueGray-600 hover:bg-blueGray-800 text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150 cursor-pointer"
+                  className="flex flex-row items-center bg-blueGray-600 hover:bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-semibold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150 cursor-pointer w-full lg:w-fit"
                   type="button"
                   to="footer-content"
                   spy={true}
@@ -94,7 +95,7 @@ export default function Navbar() {
                   hashSpy={true}
                   duration={500}
                 >
-                  <i className="fas fa-address-card mr-1"></i> Contact
+                  <FaAddressCard className="mr-2" /> Contact
                 </ScrollLink>
               </li>
             </ul>

@@ -46,11 +46,11 @@ Distance mi(Distance a, Distance b)
 void mainImage( out vec4 fragColor, in vec2 fragCoord )
 {
 	vec2 p = (2.0*fragCoord-iResolution.xy)/iResolution.y;
-    
+  
 	Distance d = Distance(sdBox((p * rot(iTime * .4) + vec2(0., .6)) * rot(-iTime), vec2(.3)), vec3(0.65, 0.85, 1.));
     d = mi(d, Distance(sdEquilateralTriangle((p * rot(iTime * .4) + vec2(0., -.6)) * rot(-iTime) / .3) * .3, vec3(1., 0., 0.)));
     
-    vec4 col = (d.d > 0.0) ? vec4(vec3(1.), 0.) : vec4(d.col, 1.);
+  vec4 col = (d.d > 0.0) ? vec4(vec3(1.), 0.) : vec4(d.col, 1.);
 
 	fragColor = col;
 }
@@ -58,7 +58,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 
 export const Jumbotron = () => {
   return (
-    <section className="header relative mx-4 items-center flex h-screen max-h-860-px">
+    <section className="header relative mx-4 items-center flex h-screen max-h-860-px mx-10">
       <div className="container mx-auto items-center flex flex-col md:flex-row">
         <div className="w-full">
           <div className="pt-32 sm:pt-0">

@@ -1,14 +1,13 @@
 import React from "react";
 import Link from "next/link";
 
-import IndexNavbar from "../components/Navbars/IndexNavbar";
-import Footer from "../components/Footers/Footer";
+import IndexNavbar from "../../components/Navbars/IndexNavbar";
+import Footer from "../../components/Footers/Footer";
 
 export default function PrivacyPolicy() {
   return (
-    <>
-      <IndexNavbar />
-      <section className="mt-48 mx-24 md:mt-40 pb-40">
+    <div className="flex justify-center">
+      <section className="mt-48 flex flex-col max-w-4xl mx-36 md:mt-40">
         <h1 className="text-5xl text-center">Privacy Policy</h1>
 
         <section className="mt-12 mx-4">
@@ -216,12 +215,19 @@ export default function PrivacyPolicy() {
                 Address: JL. Tapir I No. 10 M2 Kab. Cikarang Pusat, Prov. Jawa
                 Barat, Indonesia
               </li>
-              <li>Email address: contact@shaderboi.id</li>
+              <li>
+                Email address:{" "}
+                <a
+                  href="mailto:contact@shaderboi.id"
+                  className="text-indigo-700"
+                >
+                  contact@shaderboi.id
+                </a>
+              </li>
             </ul>
           </div>
         </section>
       </section>
-      <Footer />
-    </>
+    </div>
   );
 }
