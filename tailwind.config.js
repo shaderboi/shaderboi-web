@@ -12,7 +12,7 @@ module.exports = {
         ...colors,
       },
       fontFamily: {
-        sans: ['Inter']
+        sans: ['Inter var']
       }
     },
   },

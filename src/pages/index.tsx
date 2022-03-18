@@ -156,7 +156,7 @@ export default function Index() {
               <div className="bg-white rounded-full p-5 w-fit shadow-2xl">
                 <FaDraftingCompass className="" size={20} />
               </div>
-              <h3 className="text-3xl mb-2 font-semibold leading-normal">
+              <h3 className="text-3xl mb-2 font-semibold leading-normal tracking-tight">
                 We offer the best technology
               </h3>
               <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">

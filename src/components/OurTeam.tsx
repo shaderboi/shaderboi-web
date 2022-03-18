@@ -28,7 +28,7 @@ const profiles = [
 export const OurTeam = () => {
   return (
     <>
-      <h2 className="text-3xl mb-2 font-semibold leading-normal">Our Team</h2>
+      <h2 className="text-3xl mb-2 font-semibold leading-normal tracking-tight">Our Team</h2>
       <h3 className="text-xl mb-12">
         Shaderboi is steered by four software engineer professional, marketing,
         and business experts.

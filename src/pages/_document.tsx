@@ -21,7 +21,7 @@ class CustomDocument extends Document {
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
         </Head>
-        <body className="text-blueGray-700 antialiased">
+        <body className="text-blueGray-700 antialiase">
           <div id="page-transition"></div>
           <Main />
           <NextScript />

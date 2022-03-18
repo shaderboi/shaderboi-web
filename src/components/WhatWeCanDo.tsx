@@ -3,7 +3,7 @@ import { FaGamepad, FaGlobe, FaMobile, FaPalette } from "react-icons/fa";
 export const WhatWeCanDo = () => {
   return (
     <>
-      <h5 className="text-3xl mt-5 mb-1 font-semibold text-center leading-normal">
+      <h5 className="text-3xl mt-5 mb-1 font-semibold text-center leading-normal tracking-tight">
         What we provides
       </h5>
       <div className="w-full flex flex-col md:flex-row mt-5">

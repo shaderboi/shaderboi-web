@@ -58,11 +58,11 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 
 export const Jumbotron = () => {
   return (
-    <section className="header relative mx-4 items-center flex h-screen max-h-860-px mx-10">
+    <section className="header relative mx-4 items-center flex py-32 max-h-860-px">
       <div className="container mx-auto items-center flex flex-col md:flex-row">
         <div className="w-full">
           <div className="pt-32 sm:pt-0">
-            <h2 className="font-semibold text-4xl text-blueGray-600">
+            <h2 className="font-semibold text-4xl text-blueGray-600 tracking-tight">
               A place where you can find a solution for your problem.
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
@@ -70,7 +70,7 @@ export const Jumbotron = () => {
             </p>
           </div>
         </div>
-        <div className="mt-16 w-full bg-red-300 h-96">
+        <div className="mt-8 w-full bg-red-300 h-96">
           <ShadertoyReact fs={fs} />
         </div>
       </div>
